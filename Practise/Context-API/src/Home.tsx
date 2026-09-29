@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <div>
-            {data}
+            {data.value}
 
         </div>
     )
