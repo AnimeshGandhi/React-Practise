@@ -1,11 +1,12 @@
 import {useState} from 'react'
+import type{SyntheticEvent} from 'react'
 
 function ToDo(){
     const [inputValue,setInputValue] = useState<string>('')
     const [taskList,setTaskList] = useState<string[]>([])
 
-const handleSubmit = (e)=>{
-    e.preventDefault();
+const handleSubmit = (event:SyntheticEvent<HTMLFormElement>)=>{
+    event.preventDefault();
     if(inputValue.trim() !== ''){
         setTaskList([...taskList,inputValue.trim()])
         setInputValue('')
