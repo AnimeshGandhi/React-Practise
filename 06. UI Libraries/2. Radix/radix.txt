@@ -1,0 +1,18 @@
+npm install @radix-ui/themes
+import "@radix-ui/themes/styles.css"; => In main.jsx
+
+
+
+import { Theme } from "@radix-ui/themes";  => In app.tsx
+
+export default function () {
+	return (
+		<html>
+			<body>
+				<Theme>
+					<MyApp />
+				</Theme>
+			</body>
+		</html>
+	);
+}

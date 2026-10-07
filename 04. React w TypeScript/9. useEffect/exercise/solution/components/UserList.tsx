@@ -41,12 +41,12 @@ const UserList = () => {
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Email</th>
-          <th>Phone</th>
-        </tr>
-      </thead>
+          <th>Name</th> 
+          <th>Username</th> 
+          <th>Email</th> 
+          <th>Phone</th> 
+        </tr> 
+      </thead> 
       <tbody>
         {users.map((user) => (
           <tr key={user.id}>

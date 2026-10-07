@@ -1,5 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-import "../style.css";
+// import "../style.css";
 
 interface FormData {
   firstName: string;
